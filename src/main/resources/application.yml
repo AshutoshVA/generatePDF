@@ -1,0 +1,7 @@
+server:
+  port: 8092
+#spring:
+#  thymeleaf:
+#    cache: false;
+pdf:
+  directory: C:\\Rez_Data\\Java\\pdf_export\\itextexample\\src\\main\\resources\\pdf\\

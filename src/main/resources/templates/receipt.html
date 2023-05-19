@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link th:href="@{css/style.css}" rel="stylesheet" type="text/css">
+    <!-- <link href="../static/css/style.css" rel="stylesheet" type="text/css"> -->
+
+</head>
+
+<body>
+
+    <table align=center width=558>
+        <tr>
+            <td class="tableborder">
+                <!-- <img class="imgedit" src="../static/img/image001.png"> -->
+                <img class="imgedit" th:src="@{img/image001.png}">
+                <div class="main-container">
+                    <div class="reciptheader">e-Receipt</div>
+                    <div class="merchantname"><span class="merchantbg" th:text="${orderEntry.merchantName}"></span>
+                    </div>
+                    <div class="transactionid">
+                        <span class="left-section"> Transaction ID:
+                            <span th:text="${orderEntry.txnId}"></span>
+                        </span>
+                        <span class="right-section">Date:
+                            <span class="right-sub-section" th:text="${orderEntry.date}"></span>
+                        </span>
+                    </div>
+                    <div>
+                        <p class="main_content">Thank you, your
+                            payment towards <span class="merchant" th:text="${orderEntry.merchantName}"></span>
+                            amounting
+                            to Rs. <span th:text="${orderEntry.amount}"></span></p>
+
+                        <div>
+                            <table class="main-table">
+                                <tr th:each="item :${orderEntry.items}">
+                                    <td class="table-header">Payment Details
+                                        <table class="payment">
+                                            <tr class="payment">
+                                                <td class="payment">Amount</td>
+                                                <td class="payment" th:text="${item.amount}"></td>
+                                            </tr>
+                                            <tr class="payment">
+                                                <td class="payment">Convenience Fee</td>
+                                                <td class="payment" th:text="${item.convenienceFee}"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="payment">GST</td>
+                                                <td class="payment" th:text="${item.gst}"></td>
+                                            </tr>
+                                            <tr class="payment">
+                                                <td class="payment">Total Amount</td>
+                                                <td th:text="${item.totalAmount}"></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td class="table-header">Payer Details
+                                        <table class="payer">
+                                            <tr class="payer">
+                                                <td class="payer">Customer name</td>
+                                                <td class="payer" th:text="${item.customerName}"></td>
+                                            </tr>
+                                            <tr class="payer">
+                                                <td class="payer">Invoice no</td>
+                                                <td class="payer" th:text="${item.invoiceNo}"></td>
+                                            </tr>
+                                            <tr class="payer">
+                                                <td class="payer">Mobile no</td>
+                                                <td class="payer" th:text="${item.mobileNo}"></td>
+                                            </tr>
+                                            <tr class="payer">
+                                                <td class="payer">Email id</td>
+                                                <td class="payer" th:text="${item.email}"></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

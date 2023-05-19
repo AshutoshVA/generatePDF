@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p
+        style='margin-top:0cm;margin-right:16.3pt;margin-bottom:.0001pt;margin-left:-72.0pt;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+    &nbsp;</p>
+
+<table style="border: none;width:418.4pt;margin-left:16.3pt;border-collapse:collapse;">
+    <tbody>
+    <tr>
+        <td style="width: 418.4pt;border: 4.5pt solid gray;vertical-align: bottom;">
+            <img src="./img/image001.png" alt="">
+            <p
+                    style='margin-top:0cm;margin-right:0cm;margin-bottom:3.35pt;margin-left:6.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                    <span style='font-size:17px;font-family:"Arial",sans-serif;color:#990000;'>
+                        e-Receipt
+                    </span>
+            </p>
+            <p
+                    style='margin-top:0cm;margin-right:0cm;margin-bottom:15.85pt;margin-left:6.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                    <span style='font-size:17px;font-family:"Arial",sans-serif;color:#404040;background:yellow'>
+                        <span th:text="${orderEntry.merchantName}"/>
+                    </span>
+            </p>
+            <p
+                    style='margin-top:0cm;margin-right:44.7pt;margin-bottom:  16.6pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                    <span style='font-size:13px;font-family:"Arial",sans-serif;color:#990000;'>
+                        &nbsp;Transaction ID: ****** &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;  Date: <span th:text="${orderEntry.date}"></span>
+            </p>
+            <p
+                    style='margin-top:0cm;margin-right:17.05pt;margin-bottom:.0001pt;margin-left:2.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                    <span style='font-size:17px;font-family:"Arial",sans-serif;color:#404040;'>
+                        Thank you,
+                    </span>
+                <span style='font-size:17px;font-family:"Arial",sans-serif;'>
+                        &nbsp;your payment towards&nbsp;
+                    </span>
+                <span style='font-size:17px;font-family:"Arial",sans-serif;color:#404040;background:yellow;'>
+                        ******** name</span>
+                <span style='font-size:17px;font-family:"Arial",sans-serif;'>
+                        &nbsp;amounting to Rs.
+                    </span>
+                <span style='font-size:17px;font-family:"Arial",sans-serif;color:#404040'>
+                        XXX.XX
+                    </span>
+                <span style='font-size:17px;font-family:"Arial",sans-serif;'>
+                        &nbsp;</span>
+            </p>
+            <p
+                    style='margin-top:0cm;margin-right:17.05pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                &nbsp;</p>
+            <p
+                    style='margin-top:0cm;margin-right:17.05pt;margin-bottom:.0001pt;margin-left:2.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                &nbsp;</p>
+
+            <table style="border: none;width:356.8pt;border-collapse:collapse;">
+                <tbody>
+                <tr>
+                    <td
+                            style="width: 356.8pt;border: 1pt solid black;padding: 17.4pt 5.75pt 0cm;height: 230.6pt;vertical-align: top;">
+                        <p
+                                style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span
+                                style='font-size:16px;font-family:"Arial",sans-serif;'>Payment Details&nbsp;
+                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                        &nbsp; &nbsp; &nbsp;&nbsp;Payer Details</span></p>
+                        <table style="width:356.25pt;margin-left:.5pt;border-collapse:collapse;border:none;">
+                            <tbody>
+                            <tr>
+                                <td
+                                        style="width: 93.8pt;border: 1pt solid windowtext;padding: 0cm 5.4pt;height: 19.75pt;vertical-align: top;">
+                                    <p
+                                            style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                                        Amount</p>
+                                </td>
+                                <td
+                                        style="width: 51.55pt;border-color: windowtext windowtext windowtext currentcolor;border-style: solid solid solid none;border-width: 1pt 1pt 1pt medium;border-image: none 100% / 1 / 0 stretch;padding: 0cm 5.4pt;height: 19.75pt;vertical-align: top;">
+                                    <p
+                                            style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                                        &nbsp;</p>
+                                </td>
+                                <td
+                                        style="width: 11.8pt;border-color: currentcolor windowtext currentcolor currentcolor;border-style: none solid none none;border-width: medium 1pt medium medium;border-image: none 100% / 1 / 0 stretch;padding: 0cm 5.4pt;height: 19.75pt;vertical-align: top;">
+                                    <p
+                                            style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                                        &nbsp;</p>
+                                </td>
+                                <td
+                                        style="width: 70.05pt;border-color: windowtext windowtext windowtext currentcolor;border-style: solid solid solid none;border-width: 1pt 1pt 1pt medium;border-image: none 100% / 1 / 0 stretch;padding: 0cm 5.4pt;height: 19.75pt;vertical-align: top;">
+                                    <p
+                                            style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                                        Customer name</p>
+                                </td>
+                                <td
+                                        style="width: 129.05pt;border-color: windowtext windowtext windowtext currentcolor;border-style: solid solid solid none;border-width: 1pt 1pt 1pt medium;border-image: none 100% / 1 / 0 stretch;padding: 0cm 5.4pt;height: 19.75pt;vertical-align: top;">
+                                    <p
+                                            style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                                        &nbsp;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td
+                                        style="width: 93.8pt;border-color: currentcolor windowtext windowtext;border-style: none solid solid;border-width: medium 1pt 1pt;border-image: none 100% / 1 / 0 stretch;padding: 0cm 5.4pt;height: 20.3pt;vertical-align: top;">
+                                    <p
+                                            style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                                        Convenience Fee</p>
+                                </td>
+                                <td
+                                        style="width: 51.55pt;border-color: currentcolor windowtext windowtext currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;height: 20.3pt;vertical-align: top;">
+                                    <p
+                                            style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                                        &nbsp;</p>
+                                </td>
+                                <td
+                                        style="width: 11.8pt;border-color: currentcolor windowtext currentcolor currentcolor;border-style: none solid none none;border-width: medium 1pt medium medium;border-image: none 100% / 1 / 0 stretch;padding: 0cm 5.4pt;height: 20.3pt;vertical-align: top;">
+                                    <p
+                                            style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                                        &nbsp;</p>
+                                </td>
+                                <td
+                                        style="width: 70.05pt;border-color: currentcolor windowtext windowtext currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;height: 20.3pt;vertical-align: top;">
+                                    <p
+                                            style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                                        Invoice no</p>
+                                </td>
+                                <td
+                                        style="width: 129.05pt;border-color: currentcolor windowtext windowtext currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;height: 20.3pt;vertical-align: top;">
+                                    <p
+                                            style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                                        &nbsp;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td
+                                        style="width: 93.8pt;border-color: currentcolor windowtext windowtext;border-style: none solid solid;border-width: medium 1pt 1pt;border-image: none 100% / 1 / 0 stretch;padding: 0cm 5.4pt;height: 10.1pt;vertical-align: top;">
+                                    <p
+                                            style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                                        GST</p>
+                                </td>
+                                <td
+                                        style="width: 51.55pt;border-color: currentcolor windowtext windowtext currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;height: 10.1pt;vertical-align: top;">
+                                    <p
+                                            style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                                        &nbsp;</p>
+                                </td>
+                                <td
+                                        style="width: 11.8pt;border-color: currentcolor windowtext currentcolor currentcolor;border-style: none solid none none;border-width: medium 1pt medium medium;border-image: none 100% / 1 / 0 stretch;padding: 0cm 5.4pt;height: 10.1pt;vertical-align: top;">
+                                    <p
+                                            style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                                        &nbsp;</p>
+                                </td>
+                                <td
+                                        style="width: 70.05pt;border-color: currentcolor windowtext windowtext currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;height: 10.1pt;vertical-align: top;">
+                                    <p
+                                            style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                                        Mobile no</p>
+                                </td>
+                                <td
+                                        style="width: 129.05pt;border-color: currentcolor windowtext windowtext currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;height: 10.1pt;vertical-align: top;">
+                                    <p
+                                            style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                                        &nbsp;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td
+                                        style="width: 93.8pt;border-color: currentcolor windowtext windowtext;border-style: none solid solid;border-width: medium 1pt 1pt;border-image: none 100% / 1 / 0 stretch;padding: 0cm 5.4pt;height: 9.55pt;vertical-align: top;">
+                                    <p
+                                            style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                                        Total Amount</p>
+                                </td>
+                                <td
+                                        style="width: 51.55pt;border-color: currentcolor windowtext windowtext currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;height: 9.55pt;vertical-align: top;">
+                                    <p
+                                            style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                                        &nbsp;</p>
+                                </td>
+                                <td
+                                        style="width: 11.8pt;border-color: currentcolor windowtext currentcolor currentcolor;border-style: none solid none none;border-width: medium 1pt medium medium;border-image: none 100% / 1 / 0 stretch;padding: 0cm 5.4pt;height: 9.55pt;vertical-align: top;">
+                                    <p
+                                            style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                                        &nbsp;</p>
+                                </td>
+                                <td
+                                        style="width: 70.05pt;border-color: currentcolor windowtext windowtext currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;height: 9.55pt;vertical-align: top;">
+                                    <p
+                                            style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                                        ***** id</p>
+                                </td>
+                                <td
+                                        style="width: 129.05pt;border-color: currentcolor windowtext windowtext currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;height: 9.55pt;vertical-align: top;">
+                                    <p
+                                            style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                                        &nbsp;</p>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <p
+                    style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:2.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                &nbsp;</p>
+            <p
+                    style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:2.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                &nbsp;</p>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<p
+        style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+    &nbsp;</p>
+</body>
+</html>
+
